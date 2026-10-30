@@ -1,0 +1,23 @@
+<div id="game-wrapper">
+    <!-- Main Rendering Layer -->
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <!-- Menu Interfaces -->
+    <div id="start-screen" class="screen-overlay">
+        <h1 id="theme-title">CYBER BLASTAR</h1>
+        <p id="theme-tagline">Neutralize system errors before they breach the firewall.</p>
+        <button class="btn-launch" onclick="beginSimulation()">BOOT SYSTEMS</button>
+    </div>
+
+    <div id="gameover-screen" class="screen-overlay hidden">
+        <h1>CRITICAL BREACH</h1>
+        <p>The core firewall infrastructure was compromised.</p>
+        <button class="btn-launch" onclick="restartSimulation()">REBOOT FIRMWARE</button>
+    </div>
+
+    <!-- Real-Time Metrics Overlay -->
+    <div class="hud-display">
+        <div class="hud-label score">SCORE: <span id="ui-score">0</span></div>
+        <div class="hud-label">SHIELD: <span id="ui-shield">100%</span></div>
+    </div>
+</div>
